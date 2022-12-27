@@ -63,7 +63,7 @@ namespace FastlinkerAccount.Pages.Client
                 {
                     connection.Open();
                     String sql = "UPDATE dbo.clients " +
-                        "SET name=@name, email=@email, phone=@phone, address=@address" +
+                        "SET name=@name, email=@email, phone=@phone, address=@address " +
                         "WHERE id=@id";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
